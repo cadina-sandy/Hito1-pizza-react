@@ -68,4 +68,6 @@ Cada vez que se suben cambios a la rama `main`, Vercel actualiza automaticamente
 
 ## 🔗 Repositorio
 
-[Ver repositorio en GitHub](https://github.com/cadina-sandy/Hito1-pizza-react)
+[Ver repositorio en GitHub] https://github.com/cadina-sandy/Hito1-pizza-react
+[Ver repositorio en Vercel] https://hito1-pizza-react.vercel.app/
+
