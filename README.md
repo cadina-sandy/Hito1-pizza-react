@@ -31,7 +31,7 @@ Cada tarjeta recibe mediante props el nombre, precio, ingredientes e imagen de u
 - JavaScript
 - React
 - Vite
-- Bootstrap
+
 
 ## 📁 Estructura del proyecto
 
