@@ -1,20 +1,20 @@
-# Pizzeria Mamma Mia
+# 🍕 Pizzeria Mamma Mia
 
 Proyecto realizado para el desafio **Hito 1 - Pizzeria Mamma Mia**, donde se implementa una pagina web basica usando React, Vite y Bootstrap.
 
-## Deploy
+## 🚀 Deploy
 
 Puedes ver el proyecto publicado en Vercel aqui:
 
 [Ver sitio web](https://hito1-pizza-react.vercel.app/)
 
-## Descripcion
+## 📝 Descripcion
 
 La aplicacion muestra la pagina de una pizzeria. Incluye una barra de navegacion, un encabezado con una imagen de fondo, tres tarjetas con informacion de pizzas y un pie de pagina.
 
 Cada tarjeta recibe mediante props el nombre, precio, ingredientes e imagen de una pizza.
 
-## Funcionalidades
+## ✨ Funcionalidades
 
 - Mostrar los botones Home y Total en el Navbar.
 - Mostrar Login y Register cuando el token es falso.
@@ -24,7 +24,7 @@ Cada tarjeta recibe mediante props el nombre, precio, ingredientes e imagen de u
 - Usar props para enviar la informacion a las tarjetas.
 - Mostrar botones de Ver Mas y Añadir sin funcionalidad.
 
-## Tecnologias utilizadas
+## 🛠️ Tecnologias utilizadas
 
 - HTML5
 - CSS3
@@ -33,7 +33,7 @@ Cada tarjeta recibe mediante props el nombre, precio, ingredientes e imagen de u
 - Vite
 - Bootstrap
 
-## Estructura del proyecto
+## 📁 Estructura del proyecto
 
 ```text
 Hito1-pizza-react/
@@ -52,7 +52,7 @@ Hito1-pizza-react/
 └── README.md
 ```
 
-## Como funciona
+## ⚙️ Como funciona
 
 En `App.jsx` se muestran los componentes `Navbar`, `Home` y `Footer`.
 
@@ -60,12 +60,12 @@ Dentro de `Home.jsx` se llama al componente `Header` y se crean tres componentes
 
 En el Navbar se utiliza la variable `token` para decidir que botones mostrar. Tambien se utiliza `toLocaleString()` para mostrar el total con separador de miles.
 
-## Subida del proyecto
+## ⬆️ Subida del proyecto
 
 El codigo fue guardado y subido a GitHub. Luego se conecto el repositorio con Vercel para crear el despliegue de la pagina.
 
 Cada vez que se suben cambios a la rama `main`, Vercel actualiza automaticamente el sitio publicado.
 
-## Repositorio
+## 🔗 Repositorio
 
 [Ver repositorio en GitHub](https://github.com/cadina-sandy/Hito1-pizza-react)
