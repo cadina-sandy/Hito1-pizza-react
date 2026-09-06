@@ -1,82 +1,71 @@
-# Pizzería Mamma Mia
+# Pizzeria Mamma Mia
 
-Proyecto realizado para el Hito 1 del módulo de React. En este trabajo se creó una página básica para una pizzería utilizando React, Vite y Bootstrap.
+Proyecto realizado para el desafio **Hito 1 - Pizzeria Mamma Mia**, donde se implementa una pagina web basica usando React, Vite y Bootstrap.
 
-## Descripción
+## Deploy
 
-La página muestra un menú de navegación, un encabezado, tres tarjetas con información de pizzas y un pie de página.
+Puedes ver el proyecto publicado en Vercel aqui:
 
-El proyecto fue realizado siguiendo la pauta entregada y utilizando componentes de React.
+[Ver sitio web](https://hito1-pizza-react.vercel.app/)
 
-## Componentes creados
+## Descripcion
 
-- `Navbar.jsx`: contiene el menú de navegación y el total de la compra.
-- `Header.jsx`: contiene el título, la descripción y la imagen de fondo.
-- `Home.jsx`: reúne el encabezado y las tarjetas de las pizzas.
-- `CardPizza.jsx`: muestra el nombre, imagen, ingredientes y precio de cada pizza.
-- `Footer.jsx`: contiene el texto de derechos reservados.
-- `App.jsx`: muestra los componentes principales de la página.
+La aplicacion muestra la pagina de una pizzeria. Incluye una barra de navegacion, un encabezado con una imagen de fondo, tres tarjetas con informacion de pizzas y un pie de pagina.
+
+Cada tarjeta recibe mediante props el nombre, precio, ingredientes e imagen de una pizza.
 
 ## Funcionalidades
 
-- Uso de componentes de React.
-- Envío de información mediante props.
-- Uso de una condición para mostrar los botones según el valor de `token`.
-- Formato de precios con separador de miles.
-- Diseño adaptable utilizando Bootstrap.
-- Imágenes obtenidas desde internet.
+- Mostrar los botones Home y Total en el Navbar.
+- Mostrar Login y Register cuando el token es falso.
+- Mostrar Profile y Logout cuando el token es verdadero.
+- Mostrar el total de la compra con separador de miles.
+- Mostrar tres pizzas con su imagen, ingredientes y precio.
+- Usar props para enviar la informacion a las tarjetas.
+- Mostrar botones de Ver Mas y Añadir sin funcionalidad.
 
-Los botones solamente son visuales y todavía no tienen funcionalidad, tal como indica la pauta.
+## Tecnologias utilizadas
 
-## Tecnologías utilizadas
-
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
 - React
 - Vite
 - Bootstrap
 
-## Instalación del proyecto
+## Estructura del proyecto
 
-Para descargar y ejecutar el proyecto se deben utilizar los siguientes comandos:
-
-```bash
-git clone https://github.com/cadina-sandy/Hito1-pizza-react.git
-cd Hito1-pizza-react
-npm install
-npm run dev
+```text
+Hito1-pizza-react/
+├── src/
+│   ├── components/
+│   │   ├── CardPizza.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── Home.jsx
+│   │   └── Navbar.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+└── README.md
 ```
 
-Después se debe abrir en el navegador la dirección local que muestra Vite.
+## Como funciona
 
-## Subida a GitHub
+En `App.jsx` se muestran los componentes `Navbar`, `Home` y `Footer`.
 
-Para guardar y subir el proyecto se utilizaron los siguientes comandos:
+Dentro de `Home.jsx` se llama al componente `Header` y se crean tres componentes `CardPizza`. La informacion de cada pizza se envia utilizando props.
 
-```bash
-git init
-git add .
-git commit -m "Entrega Hito 1 Pizzeria Mamma Mia"
-git branch -M main
-git remote add origin https://github.com/cadina-sandy/Hito1-pizza-react.git
-git push -u origin main
-```
+En el Navbar se utiliza la variable `token` para decidir que botones mostrar. Tambien se utiliza `toLocaleString()` para mostrar el total con separador de miles.
 
-Repositorio del proyecto:
+## Subida del proyecto
 
-[https://github.com/cadina-sandy/Hito1-pizza-react](https://github.com/cadina-sandy/Hito1-pizza-react)
+El codigo fue guardado y subido a GitHub. Luego se conecto el repositorio con Vercel para crear el despliegue de la pagina.
 
-## Despliegue en Vercel
+Cada vez que se suben cambios a la rama `main`, Vercel actualiza automaticamente el sitio publicado.
 
-Para publicar la página se conectó el repositorio de GitHub con Vercel. Vercel detectó el proyecto de Vite, realizó la construcción y creó el despliegue de producción.
+## Repositorio
 
-Página publicada:
-
-[https://hito1-pizza-react.vercel.app](https://hito1-pizza-react.vercel.app)
-
-Cuando se suben nuevos cambios a la rama `main` de GitHub, Vercel actualiza automáticamente la página publicada.
-
-## Autor
-
-Sandy Cadina
+[Ver repositorio en GitHub](https://github.com/cadina-sandy/Hito1-pizza-react)
